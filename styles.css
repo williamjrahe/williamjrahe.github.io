@@ -1,0 +1,53 @@
+html{
+    background: lightgray;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+.nav ul{
+    list-style: none;
+    background: gray;
+    text-align: center;
+}
+.nav li{
+    display: inline-block;
+}
+.nav a{
+    text-decoration: none;
+    color: #2E475D;
+    width: 150px;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+.nav a:hover{
+    background: #000;
+}
+h1, h2, h3{
+    color: #2E475D;
+    text-align: center;
+}
+h1{
+    font-size: 56px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 18px;
+}
+table{
+    width: 1000px;
+    text-align: center;
+    background: grey;
+    border: #2E475D 5px solid;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+#html_structure{
+    color: black;
+}
+img{
+    width: 500px;
+}
