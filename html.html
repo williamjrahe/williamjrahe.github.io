@@ -19,7 +19,7 @@
     <body>
         <head>
             <h1>HTML Cheatsheet</h1>
-            <h2>Updated: 1/8/2024</h2>
+            <h2>Updated: 1/9/2024</h2>
         </head>
         <table id = "html_structure">
             <thead>
@@ -113,11 +113,67 @@
             </thead>
             <tbody>
                 <tr>
-                    <th colspan="2"><h3>&lt;a&gt; Anchor Element</h3></th>
+                    <th colspan="2"><h3>&lt;tr&gt; Table Row Element</h3></th>
                 </tr>
                 <tr>
-                    <td><p>The &lt;a&gt; anchor element is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href. The href determines the location the anchor element points to.</p></td>
-                    <td><img src="./resources/images/anchor_element.png" alt=""></td>
+                    <td><p>The table row element, &lt;tr&gt;, is used to add rows to a table before adding table data and table headings.</p></td>
+                    <td><img src="./resources/images/table_row_element.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;td&gt; Table Data Element</h3></th>
+                </tr>
+                <tr>
+                    <td><p>The table data element, &lt;td&gt;, can be nested inside a table row element, &lt;tr&gt;, to add a cell of data to a table.</p></td>
+                    <td><img src="./resources/images/table_data_element.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;thead&gt; Table Head Element</h3></th>
+                </tr>
+                <tr>
+                    <td><p>The table head element, &lt;thead&gt;, defines the headings of table columns encapsulated in table rows.</p></td>
+                    <td><img src="./resources/images/table_head_element.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>rowspan Attribute</h3></th>
+                </tr>
+                <tr>
+                    <td><p>Similar to colspan, the rowspan attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The rowspan value is set to 1 by default and will take any positive integer up to 65534.</p></td>
+                    <td><img src="./resources/images/rowspan_attribute.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;tbody&gt; Table Body Element</h3></th>
+                </tr>
+                <tr>
+                    <td><p>The table body element, &lt;tbody&gt;, is a semantic element that will contain all table data other than table heading and table footer content. If used, &lt;tbody&gt; will contain all table row &lt;tr&gt; elements, and indicates that &lt;tr&gt; elements make up the body of the table. &lt;table&gt; cannot have both &lt;tbody&gt; and &lt;tr&gt; as direct children.</p></td>
+                    <td><img src="./resources/images/table_body_element.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;th&gt; Table Heading Element</h3></th>
+                </tr>
+                <tr>
+                    <td><p>The table heading element, &lt;th&gt;, is used to add titles to rows and columns of a table and must be enclosed in a table row element, &lt;tr&gt;.</p></td>
+                    <td><img src="./resources/images/table_heading_element.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>colspan Attribute</h3></th>
+                </tr>
+                <tr>
+                    <td><p>The colspan attribute on a table header &lt;th&gt; or table data &lt;td&gt; element indicates how many columns that particular cell should span within the table. The colspan value is set to 1 by default and will take any positive integer between 1 and 1000.</p></td>
+                    <td><img src="./resources/images/colespan_attribute.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;tfoot&gt; Table Footer Element</h3></th>
+                </tr>
+                <tr>
+                    <td><p>The table footer element, &lt;tfoot&gt;, uses table rows to give footer content or to summarize content at the end of a table.</p></td>
+                    <td><img src="./resources/images/table_footer_element.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;table&gt; Table Element</h3></th>
+                </tr>
+                <tr>
+                    <td><p>In HTML, the &lt;table&gt; element has content that is used to represent a two-dimensional table made of rows and columns.</p></td>
+                    <td><img src="./resources/images/table_element.png" alt=""></td>
                 </tr>
             </tbody>
         </table>
@@ -127,13 +183,59 @@
             </thead>
             <tbody>
                 <tr>
-                    <th colspan="2"><h3>&lt;a&gt; Anchor Element</h3></th>
+                    <th colspan="2"><h3>Semantic HTML</h3></th>
                 </tr>
                 <tr>
-                    <td><p>The &lt;a&gt; anchor element is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href. The href determines the location the anchor element points to.</p></td>
-                    <td><img src="./resources/images/anchor_element.png" alt=""></td>
+                    <td><p>Semantic HTML introduces meaning to the code we write. Before Semantic HTML the elements didn’t have any meaning as to what it does or what content goes in it. An element such as &lt;div&gt; was used as a general-purpose element to create things from headers to footers to articles. With Semantic HTML we were introduced to elements that tell developers and browsers exactly what it does and what content should go in it.</p></td>
+                    <td><img src="./resources/images/semantic_html.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>Element Placement</h3></th>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>Semantic HTML introduces elements that can tell developers exactly what the element does or where it’s placed based on the name of that element. Some of these elements are &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;. &lt;header&gt; describes the content at the top of the page &lt;body&gt;. It may include a logo, navigational links or a search bar. &lt;nav&gt; encapsulates the page’s navigational links. It is often placed inside the &lt;header&gt; or &lt;footer&gt;. &lt;main&gt; encapsulates the main content of a page between the header/navigation and the footer areas. &lt;footer&gt; includes the page’s footer content at the bottom of the &lt;body&gt;.</p></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>Embedding media</h3></th>
+                </tr>
+                <tr>
+                    <td><p>Semantic HTML introduces us to &lt;video&gt;, &lt;audio&gt; and &lt;embed&gt;. &lt;video&gt; allows us to add videos to our website. &lt;audio&gt; allows us to implement audio into our website. &lt;embed&gt; can be used to implement any type of media. These elements are universal in that they all use the src attribute to link the source of the content. &lt;video&gt; and &lt;audio&gt; requires a closing tag while &lt;embed&gt; is a self-closing tag.</p></td>
+                    <td><img src="./resources/images/embedding_media.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;figure&gt; and &lt;figcaption&gt;</h3></th>
+                </tr>
+                <tr>
+                    <td><p>The &lt;figure&gt; element is used to encapsulate media such as an image, diagram. or code snippet. The &lt;figcaption&gt; element is used to describe the media encapsulated within the &lt;figure&gt; element. Developers will normally use &lt;figcaption&gt; within the &lt;figure&gt; element to group the media and description. This way, if a developer decides to change the position of the media, the description will follow along with it.</p></td>
+                    <td><img src="./resources/images/figure_and_figcaption.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;section&gt; and &lt;article&gt;</h3></th>
+                </tr>
+                <tr>
+                    <td><p><section> defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. &lt;article&gt; holds content that makes sense on its own such as articles, blogs, and comments. Generally developers will use &lt;section&gt; to define a theme for the webpage and use &lt;article&gt; to write independent content for that theme. This does not mean that &lt;article&gt; has to be used with &lt;section&gt;.</p></td>
+                    <td><img src="./resources/images/section_and_article.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>&lt;aside&gt; Aside Element</h3></th>
+                </tr>
+                <tr>
+                    <td><p>The &lt;aside&gt; element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. Usually, this information would be in a sidebar or a location where it doesn’t obstruct the main piece of content. An example of this would be an article that discusses how to take care of a dog and next to the article an ad would appear advertising a dog grooming product.</p></td>
+                    <td><img src="./resources/images/aside_element.png" alt=""></td>
                 </tr>
             </tbody>
         </table>
     </body>
 </html>
+
+
+
+<article>
+    <!--Main Content-->
+    </article>
+    <aside>
+    <!--Additional information-->
+    </aside>
+
+
+

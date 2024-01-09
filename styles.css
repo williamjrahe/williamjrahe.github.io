@@ -35,7 +35,7 @@ h2{
     font-size: 36px;
 }
 h3{
-    font-size: 18px;
+    font-size: 22px;
 }
 table{
     width: 1000px;
@@ -45,7 +45,7 @@ table{
     margin: 10px auto;
     border-radius: 5px;
 }
-#html_structure{
+#html_structure, #html_tables,#semantic_html{
     color: lightgray;
 }
 img{
